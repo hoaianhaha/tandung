@@ -1,0 +1,1309 @@
+/* ===================================
+
+   ĐÀO HOA Ổ V1.5
+
+   STYLE.CSS - PHẦN 2.1
+
+=================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    color:#fff;
+
+    background:#000;
+
+    overflow-x:hidden;
+
+    min-height:100vh;
+
+}
+
+/* ===========================
+
+        BACKGROUND
+
+=========================== */
+
+.background{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:-3;
+
+    overflow:hidden;
+
+}
+
+.bg{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    background-size:cover;
+
+    background-position:center;
+
+    opacity:0;
+
+    transition:opacity 1.5s ease;
+
+    transform:scale(1.05);
+
+}
+
+.bg.active{
+
+    opacity:1;
+
+}
+
+/* ===========================
+
+        OVERLAY
+
+=========================== */
+
+.overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+    rgba(0,0,0,.45),
+
+    rgba(0,0,0,.65)
+
+    );
+
+    z-index:-2;
+
+}
+
+/* ===========================
+
+        LOADING
+
+=========================== */
+
+#loading{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#000;
+
+    z-index:99999;
+
+}
+
+.loader{
+
+    text-align:center;
+
+}
+
+.loader span{
+
+    font-size:65px;
+
+    display:block;
+
+    animation:spin 2s linear infinite;
+
+}
+
+.loader h2{
+
+    margin-top:10px;
+
+    color:#ffd8ef;
+
+    font-size:32px;
+
+    font-family:'Dancing Script',cursive;
+
+}
+
+.loader p{
+
+    margin-top:10px;
+
+    color:white;
+
+    letter-spacing:2px;
+
+}
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ===========================
+
+        CONTAINER
+
+=========================== */
+
+.container{
+
+    width:92%;
+
+    max-width:430px;
+
+    margin:auto;
+
+    padding:30px 0 60px;
+
+    position:relative;
+
+}
+
+/* ===========================
+
+        MUSIC BUTTON
+
+=========================== */
+
+#musicBtn{
+
+    position:fixed;
+
+    top:20px;
+
+    right:20px;
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-size:20px;
+
+    background:
+
+    rgba(255,255,255,.15);
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+
+    0 0 15px rgba(255,105,180,.4);
+
+    transition:.3s;
+
+}
+
+#musicBtn:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+
+    0 0 25px #ff8cc8;
+
+}
+/* ===================================
+
+   ĐÀO HOA Ổ V1.5
+
+   STYLE.CSS - PHẦN 2.2
+
+=================================== */
+
+/* ===========================
+
+        ĐỒNG HỒ
+
+=========================== */
+
+.clock{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:20px;
+
+}
+
+.clock span{
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    color:#ffe4f2;
+
+    font-size:15px;
+
+    letter-spacing:2px;
+
+    box-shadow:
+
+    0 0 20px rgba(255,105,180,.2);
+
+}
+
+/* ===========================
+
+        AVATAR
+
+=========================== */
+
+.avatar{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:10px;
+
+}
+
+.avatar-ring{
+
+    padding:6px;
+
+    border-radius:50%;
+
+    background:
+
+    linear-gradient(
+
+        45deg,
+
+        #ff8fc9,
+
+        #ffd6ea,
+
+        #ff66b3
+
+    );
+
+    animation:ringGlow 3s infinite alternate;
+
+}
+
+.avatar img{
+
+    width:155px;
+
+    height:155px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid rgba(255,255,255,.9);
+
+    display:block;
+
+}
+
+@keyframes ringGlow{
+
+    from{
+
+        box-shadow:
+
+        0 0 15px #ff99cc,
+
+        0 0 35px #ff66b3;
+
+    }
+
+    to{
+
+        box-shadow:
+
+        0 0 25px #fff,
+
+        0 0 50px #ff66cc,
+
+        0 0 80px #ff66cc;
+
+    }
+
+}
+
+/* ===========================
+
+        TIÊU ĐỀ
+
+=========================== */
+
+.title{
+
+    text-align:center;
+
+    margin-top:22px;
+
+}
+
+.title h1{
+
+    font-size:36px;
+
+    font-family:'Dancing Script',cursive;
+
+    color:white;
+
+    text-shadow:
+
+    0 0 10px #ff8ec8,
+
+    0 0 30px #ff66b3,
+
+    0 0 60px #ff66b3;
+
+}
+
+/* ===========================
+
+        TIỂU SỬ
+
+=========================== */
+
+.bio{
+
+    margin-top:18px;
+
+    text-align:center;
+
+}
+
+.bio p{
+
+    color:#ffe6f3;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    transition:.5s;
+
+    min-height:55px;
+
+}
+
+/* ===========================
+
+        THỐNG KÊ
+
+=========================== */
+
+.stats{
+
+    margin-top:28px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:12px;
+
+}
+
+.stats div{
+
+    flex:1;
+
+    text-align:center;
+
+    padding:12px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    transition:.35s;
+
+}
+
+.stats div:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 0 20px rgba(255,120,180,.4);
+
+}
+
+.stats i{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#ffaad5;
+
+    font-size:20px;
+
+}
+
+.stats span{
+
+    font-size:13px;
+
+    color:#fff;
+
+}
+
+/* ===========================
+
+        TIÊU ĐỀ LINK
+
+=========================== */
+
+.section-title{
+
+    text-align:center;
+
+    margin:35px 0 18px;
+
+}
+
+.section-title h2{
+
+    color:#ffd7ea;
+
+    font-size:22px;
+
+    text-shadow:
+
+    0 0 12px #ff7ec4;
+
+}
+/* ===================================
+
+   ĐÀO HOA Ổ V1.5
+
+   STYLE.CSS - PHẦN 2.3
+
+=================================== */
+
+/* ===========================
+
+        DANH SÁCH LINK
+
+=========================== */
+
+.links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* ===========================
+
+        CARD
+
+=========================== */
+
+.card{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    text-decoration:none;
+
+    color:#fff;
+
+    padding:18px 20px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    transition:.35s;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:70%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.45),
+
+        transparent
+
+    );
+
+    transition:1s;
+
+}
+
+.card:hover::before{
+
+    left:130%;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+        0 0 20px rgba(255,120,180,.45),
+
+        0 0 40px rgba(255,120,180,.25);
+
+}
+
+/* ===========================
+
+        BÊN TRÁI
+
+=========================== */
+
+.left{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+/* ===========================
+
+        ICON
+
+=========================== */
+
+.icon{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+    transition:.35s;
+
+}
+
+.facebook{
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        #ff8bc7,
+
+        #ff5fa8
+
+    );
+
+}
+
+.tiktok{
+
+    background:
+
+    linear-gradient(
+
+        135deg,
+
+        #ff5ea8,
+
+        #8f5cff
+
+    );
+
+}
+
+.card:hover .icon{
+
+    transform:rotate(12deg) scale(1.1);
+
+    box-shadow:
+
+        0 0 18px #ff8bc7;
+
+}
+
+/* ===========================
+
+        THÔNG TIN
+
+=========================== */
+
+.info{
+
+    margin-left:16px;
+
+}
+
+.info h3{
+
+    font-size:18px;
+
+    color:#fff;
+
+    font-weight:600;
+
+}
+
+.info p{
+
+    margin-top:4px;
+
+    font-size:13px;
+
+    color:#ffe2f1;
+
+}
+
+/* ===========================
+
+        MŨI TÊN
+
+=========================== */
+
+.card .fa-chevron-right{
+
+    font-size:18px;
+
+    color:#ffd5eb;
+
+    transition:.35s;
+
+}
+
+.card:hover .fa-chevron-right{
+
+    transform:translateX(6px);
+
+    color:#fff;
+
+}
+/* ===================================
+
+   ĐÀO HOA Ổ V1.5
+
+   STYLE.CSS - PHẦN 2.4
+
+=================================== */
+
+/* ===========================
+
+        HOA ĐÀO RƠI
+
+=========================== */
+
+#petals{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:1;
+
+}
+
+.petal{
+
+    position:absolute;
+
+    top:-60px;
+
+    user-select:none;
+
+    animation-name:petalFall;
+
+    animation-timing-function:linear;
+
+    animation-iteration-count:infinite;
+
+    opacity:.9;
+
+    filter:drop-shadow(0 0 8px #ff9ed0);
+
+}
+
+@keyframes petalFall{
+
+    0%{
+
+        transform:
+
+        translateY(-60px)
+
+        translateX(0)
+
+        rotate(0deg);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:
+
+        translateY(120vh)
+
+        translateX(120px)
+
+        rotate(720deg);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===========================
+
+        HẠT SÁNG
+
+=========================== */
+
+#particles{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+.particle{
+
+    position:absolute;
+
+    width:5px;
+
+    height:5px;
+
+    border-radius:50%;
+
+    background:#ffd7ef;
+
+    animation:particleMove linear infinite;
+
+    box-shadow:
+
+        0 0 10px #fff,
+
+        0 0 20px #ff9ccf;
+
+}
+
+@keyframes particleMove{
+
+    0%{
+
+        transform:
+
+        translateY(110vh)
+
+        scale(.3);
+
+        opacity:0;
+
+    }
+
+    15%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:
+
+        translateY(-10vh)
+
+        scale(1);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ===========================
+
+        FOOTER
+
+=========================== */
+
+.footer{
+
+    text-align:center;
+
+    margin-top:45px;
+
+    padding-bottom:25px;
+
+}
+
+.footer p{
+
+    font-size:18px;
+
+    color:#ffe5f4;
+
+    text-shadow:
+
+        0 0 10px #ff8dc8;
+
+}
+
+.footer span{
+
+    display:block;
+
+    margin-top:10px;
+
+    color:#ffcbe5;
+
+    font-size:13px;
+
+}
+
+/* ===========================
+
+        HIỆU ỨNG XUẤT HIỆN
+
+=========================== */
+
+.container{
+
+    animation:fadeUp .9s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+
+        LOADING BIẾN MẤT
+
+=========================== */
+
+#loading.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.8s;
+
+}
+
+/* ===========================
+
+        CHỮ PHÁT SÁNG
+
+=========================== */
+
+.title h1{
+
+    animation:titleGlow 3s infinite alternate;
+
+}
+
+@keyframes titleGlow{
+
+    from{
+
+        text-shadow:
+
+        0 0 10px #ff8bc7,
+
+        0 0 20px #ff8bc7;
+
+    }
+
+    to{
+
+        text-shadow:
+
+        0 0 18px #fff,
+
+        0 0 35px #ff66b3,
+
+        0 0 60px #ff66b3;
+
+    }
+
+}
+/* ===================================
+
+   ĐÀO HOA Ổ V1.5
+
+   STYLE.CSS - PHẦN 2.5
+
+=================================== */
+
+/* ===========================
+
+        SCROLLBAR
+
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#1a1a1a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:linear-gradient(
+
+        #ff8bc7,
+
+        #ff5fa8
+
+    );
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#ff73bb;
+
+}
+
+/* ===========================
+
+        CHỌN VĂN BẢN
+
+=========================== */
+
+::selection{
+
+    background:#ff79bc;
+
+    color:#fff;
+
+}
+
+/* ===========================
+
+        ẢNH KHÔNG KÉO ĐƯỢC
+
+=========================== */
+
+img{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+/* ===========================
+
+        LINK
+
+=========================== */
+
+a{
+
+    -webkit-tap-highlight-color:transparent;
+
+}
+
+/* ===========================
+
+        RESPONSIVE
+
+=========================== */
+
+@media(max-width:768px){
+
+.container{
+
+    width:95%;
+
+    padding-top:20px;
+
+}
+
+.avatar img{
+
+    width:130px;
+
+    height:130px;
+
+}
+
+.title h1{
+
+    font-size:30px;
+
+}
+
+.bio p{
+
+    font-size:14px;
+
+}
+
+.stats{
+
+    flex-direction:column;
+
+}
+
+.card{
+
+    padding:15px;
+
+}
+
+.icon{
+
+    width:52px;
+
+    height:52px;
+
+    font-size:22px;
+
+}
+
+.info h3{
+
+    font-size:16px;
+
+}
+
+.info p{
+
+    font-size:12px;
+
+}
+
+.footer p{
+
+    font-size:16px;
+
+}
+
+}
+
+/* ===========================
+
+        MÀN HÌNH LỚN
+
+=========================== */
+
+@media(min-width:1200px){
+
+.container{
+
+    max-width:500px;
+
+}
+
+}
+
+/* ===========================
+
+        HIỆU ỨNG CHUNG
+
+=========================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    animation:pageShow 1s ease;
+
+}
+
+@keyframes pageShow{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* ===========================
+
+        NÚT KHI NHẤN
+
+=========================== */
+
+.card:active{
+
+    transform:scale(.97);
+
+}
+
+#musicBtn:active{
+
+    transform:scale(.92);
+
+}
+
+/* ===========================
+
+        KẾT THÚC CSS
+
+=========================== */

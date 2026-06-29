@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+
+          content="width=device-width, initial-scale=1.0">
+
+    <title>🌸 Đào Hoa Ổ 🌸</title>
+
+    <meta name="theme-color" content="#ff7eb8">
+
+    <meta name="description"
+
+          content="🌸 Đào Hoa Ổ 🌸">
+
+    <!-- Font -->
+
+    <link rel="preconnect"
+
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+
+          href="https://fonts.gstatic.com"
+
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Dancing+Script:wght@700&display=swap"
+
+          rel="stylesheet">
+
+    <!-- Icon -->
+
+    <link rel="stylesheet"
+
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+
+          href="style.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+
+        LOADING
+
+============================ -->
+
+<div id="loading">
+
+    <div class="loader">
+
+        <span>🌸</span>
+
+        <h2>Đào Hoa Ổ</h2>
+
+        <p>Loading...</p>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+
+        BACKGROUND
+
+============================ -->
+
+<div class="background">
+
+    <div class="bg active"></div>
+
+    <div class="bg"></div>
+
+    <div class="bg"></div>
+
+    <div class="bg"></div>
+
+</div>
+
+<!-- Overlay -->
+
+<div class="overlay"></div>
+
+<!-- Hoa đào -->
+
+<div id="petals"></div>
+
+<!-- Hạt sáng -->
+
+<div id="particles"></div>
+
+<!-- Nội dung sẽ được thêm ở Phần 1.2 -->
+
+
+<!-- ===========================
+
+        CONTAINER
+
+============================ -->
+
+<div class="container">
+
+    <!-- Nút nhạc -->
+
+    <button id="musicBtn">
+
+        <i class="fa-solid fa-music"></i>
+
+    </button>
+
+    <!-- Đồng hồ -->
+
+    <div class="clock">
+
+        <span id="clock">
+
+            00:00:00
+
+        </span>
+
+    </div>
+
+    <!-- Avatar -->
+
+    <div class="avatar">
+
+        <div class="avatar-ring">
+
+            <img src="img/avatar.jpg"
+
+                 alt="Đào Hoa Ổ">
+
+        </div>
+
+    </div>
+
+    <!-- Tiêu đề -->
+
+    <div class="title">
+
+        <h1>🌸 Đào Hoa Ổ 🌸</h1>
+
+    </div>
+
+    <!-- Tiểu sử -->
+
+    <div class="bio">
+
+        <p id="bioText">
+
+            Đào Hoa thịnh phóng,
+
+            thanh âm viễn dương.
+
+        </p>
+
+    </div>
+
+    <!-- Thống kê -->
+
+    <div class="stats">
+
+        <div>
+
+            <i class="fa-solid fa-heart"></i>
+
+            <span>Đào Hoa</span>
+
+        </div>
+
+        <div>
+
+            <i class="fa-solid fa-star"></i>
+
+            <span>Bình Yên</span>
+
+        </div>
+
+        <div>
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <span>2026</span>
+
+        </div>
+
+    </div>
+
+    <!-- Tiêu đề liên kết -->
+
+    <div class="section-title">
+
+        <h2>
+
+            🌸 Liên Kết 🌸
+
+        </h2>
+
+    </div>
+
+    <!-- Phần nút link sẽ thêm ở 1.3 -->
+
+    <!-- ===========================
+
+            DANH SÁCH LIÊN KẾT
+
+    ============================ -->
+
+    <div class="links">
+
+        <!-- Facebook 1 -->
+
+        <a class="card"
+
+           href="https://www.facebook.com/share/1BiuM6xo3d/"
+
+           target="_blank">
+
+            <div class="left">
+
+                <div class="icon facebook">
+
+                    <i class="fab fa-facebook-f"></i>
+
+                </div>
+
+                <div class="info">
+
+                    <h3>Fage Chính</h3>
+
+                    <p>🌸 Đào Hoa Ổ 🌸</p>
+
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+        <!-- TikTok -->
+
+        <a class="card"
+
+           href="https://www.tiktok.com/@i_luv_enlit_0707?_r=1&_t=ZS-97YdSt5FAIC"
+
+           target="_blank">
+
+            <div class="left">
+
+                <div class="icon tiktok">
+
+                    <i class="fab fa-tiktok"></i>
+
+                </div>
+
+                <div class="info">
+
+                    <h3>TikTok</h3>
+
+                    <p>@i_luv_enlit_0707</p>
+
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+        <!-- Facebook 2 -->
+
+        <a class="card"
+
+           href="https://www.facebook.com/share/1EMypkVnNn/"
+
+           target="_blank">
+
+            <div class="left">
+
+                <div class="icon facebook">
+
+                    <i class="fab fa-facebook-f"></i>
+
+                </div>
+
+                <div class="info">
+
+                    <h3>Boss [AhYaa]</h3>
+
+                    <p>🌸 Đào Hoa Ổ 🌸</p>
+
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+        <!-- Facebook 3 -->
+
+        <a class="card"
+
+           href="https://www.facebook.com/share/1Ck6wvFLVC/"
+
+           target="_blank">
+
+            <div class="left">
+
+                <div class="icon facebook">
+
+                    <i class="fab fa-facebook-f"></i>
+
+                </div>
+
+                <div class="info">
+
+                    <h3>Người Tuyển ĐQ -🌸Pandora🌸 </h3>
+
+                    <p>🌸 Đào Hoa Ổ 🌸</p>
+
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+        <!-- Facebook 4 -->
+
+        <a class="card"
+
+           href="https://www.facebook.com/share/19csWoKwdz/"
+
+           target="_blank">
+
+            <div class="left">
+
+                <div class="icon facebook">
+
+                    <i class="fab fa-facebook-f"></i>
+
+                </div>
+
+                <div class="info">
+
+                    <h3>Người Tuyển TD -🌸Jimae🌸</h3>
+
+                    <p>🌸 Đào Hoa Ổ 🌸</p>
+
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+        <!-- Facebook 5 -->
+
+        <a class="card"
+
+           href="https://www.facebook.com/share/14czPi5bZmf/"
+
+           target="_blank">
+
+            <div class="left">
+
+                <div class="icon facebook">
+
+                    <i class="fab fa-facebook-f"></i>
+
+                </div>
+
+                <div class="info">
+
+                    <h3>Chi Tiết Khác -[Hạo Vũ]</h3>
+
+                    <p>🌸 Đào Hoa Ổ 🌸</p>
+
+                </div>
+
+            </div>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </a>
+
+    </div>
+
+    <!-- Phần cuối trang sẽ thêm ở 1.4 -->
+
+    <!-- ===========================
+
+            FOOTER
+
+    ============================ -->
+
+    <footer class="footer">
+
+        <p>
+
+            🌸 Cảm ơn bạn đã ghé thăm Đào Hoa Ổ 🌸
+
+        </p>
+
+        <span>
+
+            © 2026 Đào Hoa Ổ - All Rights Reserved
+
+        </span>
+
+    </footer>
+
+</div>
+
+<!-- ===========================
+
+        AUDIO
+
+============================ -->
+
+<audio id="bgMusic" loop>
+
+    <source src="music/music.mp3" type="audio/mpeg">
+
+</audio>
+
+<!-- ===========================
+
+        JAVASCRIPT
+
+============================ -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
